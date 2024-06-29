@@ -84,7 +84,7 @@ header h1 {
   filter:contrast(200%) brightness(40%);
 }
 /* Hero Style Start */
-.intro {
+intro {
   background-image: url("Banner_green.jpg")$
   height: 400px;
   position: center;
