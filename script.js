@@ -1,5 +1,15 @@
 /* script.js */
 
+// Shrinking Nav Bar on Scroll
+window.addEventListener("scroll", function () {
+    let navbar = document.querySelector("header");
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+
 // Function to switch between tabs
 function showTab(tabId) {
     const tabs = document.querySelectorAll('.tab-content');
