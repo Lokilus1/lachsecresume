@@ -34,26 +34,36 @@ a {
 a:hover {
     color: #2ecc71; /* Green on hover */
 }
+#contact a:hover {
+    color: #e74c3c; /* Or another color that fits your style */
+    text-decoration: underline;
+}
 
 /* Buttons */
 input[type=submit] {
-    background-color: #3498db; /* Primary color */
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
+    background-color: #ffffff; /* Light background for contrast */
+    color: #2c3e50; /* Dark text for readability */
+    font-size: 16px;
+    font-weight: bold; /* Make the text bolder */
+    padding: 14px 28px; /* More padding for a larger, more substantial button */
+    border: 2px solid #3498db; /* Border with the same blue as links for cohesion */
+    border-radius: 8px; /* Rounded corners for a softer look */
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
 input[type=submit]:hover {
-    background-color: #2ecc71; /* Secondary color */
-    opacity: 0.8;
-    transform: scale(1.05); /* Button expands slightly */
+    background-color: #3498db; /* Same color as the links */
+    color: white; /* White text on hover */
+    border-color: #2980b9; /* Darker border on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
 }
 
 /* Tab Content */
 .tab-content {
+    padding: 20px;
     display: none;
     animation: fadeIn 1s ease-in-out; /* Animation for tab content */
 }
@@ -75,6 +85,7 @@ input[type=submit]:hover {
 
 .card:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Depth effect */
+    transform: scale(1.02); /* Adds slight scaling effect */
 }
 
 /* Gradient Background */
@@ -85,6 +96,10 @@ header {
     text-align: center;
 }
 
+header h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 footer {
     background: linear-gradient(135deg, #e74c3c, #f39c12);
     color: white;
@@ -107,12 +122,17 @@ footer {
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     nav ul {
         display: block;
         text-align: center;
     }
-
+    header h1 {
+        fontsize: 2em;
+    }
+    nav ul li {
+        margin: 8px;
+    }
     .card {
         margin: 10px;
     }
