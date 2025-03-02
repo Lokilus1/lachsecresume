@@ -1,36 +1,32 @@
-<section>
-    <h2>Cyber Blog</h2>
-    <textarea id="newPost" placeholder="Write something..."></textarea>
-    <button onclick="addPost()">Post</button>
-    <div id="posts"></div>
-</section>
-
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
-// Function to add blog posts
-    async function addPost() {
-        const postContent = document.getElementById("newPost").value;
-        if (!postContent.trim()) return;
-        
-        await addDoc(collection(db, "blogPosts"), { content: postContent, timestamp: Date.now() });
-
-        document.getElementById("newPost").value = "";
-        displayPosts();
-    }
-
-    // Function to display posts
-    async function displayPosts() {
-        const querySnapshot = await getDocs(collection(db, "blogPosts"));
-        document.getElementById("posts").innerHTML = querySnapshot.docs.map(doc => `<p>${doc.data().content}</p>`).join("");
-    }
-
-    window.onload = displayPosts;
-</script>
+<!-- blog.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Blog - My Resume & Cyber Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cyber Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Cyber Blog</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Write a New Post</h2>
+        <textarea id="newPost" placeholder="Write something..."></textarea>
+        <button onclick="addPost()">Post</button>
+        <div id="posts"></div>
+    </section>
+    
+    <!-- Include script.js for Firebase functionality securely -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
