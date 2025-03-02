@@ -1,1 +1,27 @@
+<section>
+    <h2>Cyber Blog</h2>
+    <textarea id="newPost" placeholder="Write something..."></textarea>
+    <button onclick="addPost()">Post</button>
+    <div id="posts"></div>
+</section>
+<script>
+    function addPost() {
+        let postContent = document.getElementById("newPost").value;
+        if (!postContent.trim()) return;
+        
+        let posts = JSON.parse(localStorage.getItem("blogPosts")) || [];
+        posts.unshift(postContent);
+        localStorage.setItem("blogPosts", JSON.stringify(posts));
+        
+        displayPosts();
+        document.getElementById("newPost").value = "";
+    }
+
+    function displayPosts() {
+        let posts = JSON.parse(localStorage.getItem("blogPosts")) || [];
+        document.getElementById("posts").innerHTML = posts.map(p => `<p>${p}</p>`).join("");
+    }
+
+    window.onload = displayPosts;
+</script>
 
