@@ -16,6 +16,13 @@ navLinks.forEach(link => {
     });
 });
 
+// Function for default-content to disappear when switching tabs
+function showTab(tabId) {
+            document.getElementById("default-content").style.display = "none";
+            const tabs = document.querySelectorAll(".tab-content");
+            tabs.forEach(tab => tab.style.display = "none");
+            document.getElementById(tabId).style.display = "block";
+        }
 
 // Function to add blog posts
 async function addPost() {
