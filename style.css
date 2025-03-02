@@ -1,7 +1,55 @@
 /* style.css */
 
-/* Project Section Styling */
+/* About Section Styling */
+#about {
+    padding: 40px;
+    background-color: #f8f9fa; /* Light background for About section */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px; /* Keep the content centered with some margin */
+}
 
+#about h2 {
+    font-size: 2.5rem;
+    color: #2c3e50; /* Dark grey for the heading */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.about-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #34495e; /* Darker text for better readability */
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+.about-content strong {
+    color: #3498db; /* Primary color for emphasis */
+}
+
+@media (max-width: 768px) {
+    #about {
+        padding: 20px;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        font-size: 1rem;
+    }
+}
+
+
+/* Project Section Styling */
 #projects {
     margin: 40px;
     padding: 20px;
