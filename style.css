@@ -1,5 +1,37 @@
 /* style.css */
 
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Show mobile menu when active */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #2c3e50;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
+
 /* Sticky Navbar */
 header {
     position: fixed;
