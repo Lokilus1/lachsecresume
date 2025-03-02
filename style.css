@@ -1,5 +1,91 @@
 /* style.css */
 
+/* Project Section Styling */
+
+#projects {
+    margin: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #2980b9;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #3498db;
+    margin-top: 15px;
+}
+
+.date {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.project, .ctf {
+    margin-bottom: 30px;
+}
+
+.project p, .ctf ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #2c3e50;
+}
+
+.project p strong, .ctf li strong {
+    font-weight: bold;
+}
+
+.ctf ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ctf li {
+    margin-bottom: 10px;
+}
+
+.ctf li::before {
+    content: "• ";
+    color: #2980b9;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    #projects {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3, h4 {
+        font-size: 1.3rem;
+    }
+
+    .project, .ctf {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
 /* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
