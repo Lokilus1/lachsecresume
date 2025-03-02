@@ -1,7 +1,7 @@
 /* style.css */
 
 /* About Section Styling */
-#about {
+#home {
     padding: 40px;
     background-color: #f8f9fa; /* Light background for About section */
     border-radius: 10px;
@@ -9,7 +9,7 @@
     max-width: 1200px; /* Keep the content centered with some margin */
 }
 
-#about h2 {
+#home h2 {
     font-size: 2.5rem;
     color: #2c3e50; /* Dark grey for the heading */
     margin-bottom: 20px;
@@ -17,7 +17,7 @@
     font-weight: bold;
 }
 
-.about-content {
+.home-content {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #34495e; /* Darker text for better readability */
@@ -26,24 +26,24 @@
     text-align: left;
 }
 
-.about-content p {
+.home-content p {
     margin-bottom: 20px;
 }
 
-.about-content strong {
+.home-content strong {
     color: #3498db; /* Primary color for emphasis */
 }
 
 @media (max-width: 768px) {
-    #about {
+    #home {
         padding: 20px;
     }
 
-    #about h2 {
+    #home h2 {
         font-size: 2rem;
     }
 
-    .about-content {
+    .home-content {
         font-size: 1rem;
     }
 }
