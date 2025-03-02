@@ -1,1 +1,33 @@
 
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Resume & Cyber Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Cyber Blog</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Get in Touch</h2>
+        <p>Feel free to reach out to me through the following:</p>
+        <ul>
+            <li><a href="#">LinkedIn</a> <!-- TODO: Replace with your LinkedIn link --> </li>
+            <li><a href="#">GitHub</a>   <!-- TODO: Replace with your GitHub link --> </li>
+            <li><a href="#">Email</a>    <!-- TODO: Replace with your email link --> </li>
+        </ul>
+    </section>
+</body>
+</html>
