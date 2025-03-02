@@ -1,5 +1,23 @@
 /* style.css */
 
+/* Sticky Navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Shrinks the navbar when scrolling */
+header.scrolled {
+    padding: 10px;
+    background: rgba(44, 62, 80, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
 /* Navigation Styling */
 .nav-list {
     display: flex;
