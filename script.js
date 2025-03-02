@@ -1,5 +1,10 @@
 /* script.js */
 
+// Toggle Mobile Menu
+function toggleMenu() {
+    document.querySelector("nav ul").classList.toggle("active");
+}
+
 // Shrinking Nav Bar on Scroll
 window.addEventListener("scroll", function () {
     let navbar = document.querySelector("header");
