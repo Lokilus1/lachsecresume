@@ -1,27 +1,124 @@
 /* style.css */
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #ecf0f1; /* Light grey background */
+    color: #2c3e50; /* Dark grey text */
+    transition: background-color 0.3s ease;
 }
+
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin: 10px;
 }
 
-/* script.js */
-function showTab(tabId) {
-    const tabs = document.querySelectorAll('.tab-content');
-    tabs.forEach(tab => tab.style.display = 'none');
-    document.getElementById(tabId).style.display = 'block';
+a {
+    text-decoration: none;
+    color: #3498db; /* Primary color */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2ecc71; /* Green on hover */
+}
+
+/* Buttons */
+input[type=submit] {
+    background-color: #3498db; /* Primary color */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 input[type=submit]:hover {
-  opacity: 0.8;
+    background-color: #2ecc71; /* Secondary color */
+    opacity: 0.8;
+    transform: scale(1.05); /* Button expands slightly */
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    animation: fadeIn 1s ease-in-out; /* Animation for tab content */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Cards for Content */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Depth effect */
+}
+
+/* Gradient Background */
+header {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(135deg, #e74c3c, #f39c12);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3498db;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ecf0f1;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    header, footer {
+        padding: 15px;
+    }
 }
   
