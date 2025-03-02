@@ -16,9 +16,6 @@ navLinks.forEach(link => {
     });
 });
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
 
 // Function to add blog posts
 async function addPost() {
@@ -39,5 +36,9 @@ async function displayPosts() {
 
 // Run function when page loads
 window.onload = displayPosts;
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
 // TODO: Expand with additional JavaScript functionality if needed.
