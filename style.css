@@ -1,5 +1,23 @@
 /* style.css */
 
+/* Dark Mode Styles */
+.dark-mode {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Button Style */
+.dark-mode-btn {
+    position: absolute;
+    right: 60px;
+    top: 15px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
 /* Animated Gradient Background */
 @keyframes gradientMove {
     0% { background-position: 0% 50%; }
