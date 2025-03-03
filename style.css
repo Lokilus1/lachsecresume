@@ -250,7 +250,7 @@ header.scrolled {
 
 /* About Section Styling */
 #home {
-    padding: 40px;
+    padding: 1600px; /* changed from 40px */
     background-color: #f8f9fa; /* Light background for About section */
     border-radius: 10px;
     margin: 20px auto;
