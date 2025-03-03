@@ -1,5 +1,10 @@
 /* style.css */
 
+/* Fix header overlapping issue */
+body {
+    padding-top: 80px;
+}
+
 /* Dark Mode Styles */
 .dark-mode {
     background: #1e1e1e;
@@ -44,6 +49,14 @@ header {
     color: white;
 }
 
+/* Desktop nav always visible */
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
 /* Show mobile menu when active */
 @media (max-width: 768px) {
     .menu-toggle {
@@ -84,7 +97,6 @@ header.scrolled {
     background: rgba(44, 62, 80, 0.9);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
 
 /* Navigation Styling */
 .nav-list {
