@@ -2,7 +2,7 @@
 
 /* Fix header overlapping issue */
 body {
-    padding-top: 120px;
+    padding-top: 200px;
     overflow-x: hidden;
 }
 
