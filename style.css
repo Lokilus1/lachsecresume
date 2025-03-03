@@ -1,5 +1,18 @@
 /* style.css */
 
+/* Animated Gradient Background */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    background: linear-gradient(-45deg, #3498db, #9b59b6, #e74c3c, #2ecc71);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+}
+
 /* Smooth Tab Animation */
 .tab-content {
     transition: opacity 0.3s ease-in-out;
