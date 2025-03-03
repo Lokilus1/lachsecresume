@@ -3,6 +3,15 @@
 /* Fix header overlapping issue */
 body {
     padding-top: 80px;
+    overflow-x: hidden;
+}
+
+/* Ensure sections are visible */
+.tab-content {
+    display: block;
+    padding: 20px;
+    min-height: 100vh;
+    overflow-y: auto;
 }
 
 /* Dark Mode Styles */
