@@ -1,5 +1,10 @@
 /* style.css */
 
+/* Smooth Tab Animation */
+.tab-content {
+    transition: opacity 0.3s ease-in-out;
+}
+
 /* Mobile Menu Toggle */
 .menu-toggle {
     display: none;
