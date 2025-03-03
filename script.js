@@ -1,5 +1,23 @@
 /* script.js */
 
+// Smooth Tab Transition
+function showTab(tabId) {
+    document.getElementById("default-content").style.display = "none";
+    
+    const tabs = document.querySelectorAll(".tab-content");
+    tabs.forEach(tab => {
+        tab.style.opacity = "0"; // Start fade out
+        setTimeout(() => {
+            tab.style.display = "none";
+        }, 300);
+    });
+
+    setTimeout(() => {
+        document.getElementById(tabId).style.display = "block";
+        document.getElementById(tabId).style.opacity = "1"; // Fade in
+    }, 300);
+}
+
 // Toggle Mobile Menu
 function toggleMenu() {
     document.querySelector("nav ul").classList.toggle("active");
