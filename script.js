@@ -1,5 +1,10 @@
 /* script.js */
 
+// Dark Mode Toggle
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
+
 // Smooth Tab Transition
 function showTab(tabId) {
     document.getElementById("default-content").style.display = "none";
