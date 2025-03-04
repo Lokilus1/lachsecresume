@@ -8,13 +8,14 @@
 
 /* Fix header overlapping issue */
 body {
-    padding-top: 200px;
+    padding-top: 80px;
     overflow-x: hidden;
 }
 
 /* Ensure sections are visible */
 .tab-content {
     display: block;
+    margin-top: 20px;
     padding: 40px 20px; /* Addedd top padding to create space */
     min-height: 100vh;
     overflow-y: auto;
