@@ -2,20 +2,20 @@
 
 /* Add buffer space below the header */
 .spacer {
-    height: 150px;
+    height: 170px;
     width: 100%;
 }
 
 /* Fix header overlapping issue */
 body {
-    padding-top: 150px;
+    padding-top: 170px;
     overflow-x: hidden;
 }
 
 /* Ensure sections are visible */
 .tab-content {
     display: block;
-    padding: 100px 20px; /* Addedd top padding to create space */
+    padding: 120px 20px; /* Addedd top padding to create space */
     min-height: 100vh;
     overflow-y: auto;
 }
