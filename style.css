@@ -1,5 +1,71 @@
 /* style.css */
 
+/* Container for skills and interests */
+.skills-container, .interests-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+/* Style for each skill */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for the progress bars */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    transition: width 1s ease-out;
+}
+
+/* Adding hover effect for interests */
+.interest {
+    background-color: #d4edda;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.interest:hover {
+    transform: scale(1.05);
+    background-color: #c3e6cb;
+}
+
+/* Animating skills */
+@keyframes skillAnimation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.progress-bar {
+    animation: skillAnimation 2s ease-out forwards;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .skills-container, .interests-container {
+        margin: 20px;
+        padding: 15px;
+    }
+}
+
 /* Add buffer space below the header */
 .spacer {
     height: 170px;
