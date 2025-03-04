@@ -15,7 +15,7 @@ body {
 /* Ensure sections are visible */
 .tab-content {
     display: block;
-    padding: 120px 20px; /* Addedd top padding to create space */
+    padding: 140px 20px; /* Addedd top padding to create space */
     min-height: 100vh;
     overflow-y: auto;
 }
